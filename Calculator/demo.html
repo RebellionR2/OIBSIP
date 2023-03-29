@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        .screen{
+             display: flex;
+             background-color: aqua;
+             height: 350px;
+             width: 200px;
+             justify-content: center;
+             align-items: center;
+             margin: auto;
+             border: solid black;
+             border-radius: 9px;
+             box-shadow: 10px 10px;
+            background-image: linear-gradient(to bottom right,pink,blue);
+            
+        }
+        
+        .button{
+            height: 40px;
+             width: 35px;
+             margin: 5px;
+             border: solid black;
+             border-radius: 30px;
+            
+        }
+
+      
+        .input{
+            margin-left: 15px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Calculator</h1>
+    <div class="screen">
+
+        <div class="elements">
+ 
+         <input class="input" type="text" id="result"> 
+ 
+         <button class="button" onclick="clearResult()">AC</button>
+         <button class="button" onclick="insertValue('(')">(</button>
+         <button class="button" onclick="insertValue(')')">)</button>
+         <button class="button" onclick="clearLastChar()">X</button>
+        
+         <button class="button" onclick="insertValue('7')">7</button>
+         <button class="button" onclick="insertValue('8')">8</button>
+         <button class="button" onclick="insertValue('9')">9</button>
+         <button class="button" onclick="insertValue('/')">/</button>
+ 
+         <button class="button" onclick="insertValue('4')">4</button>
+         <button class="button" onclick="insertValue('5')">5</button>
+         <button class="button" onclick="insertValue('6')">6</button>
+         <button class="button" onclick="insertValue('*')">*</button>
+        
+         <button class="button" onclick="insertValue('1')">1</button>
+         <button class="button" onclick="insertValue('2')">2</button>
+         <button class="button" onclick="insertValue('3')">3</button>
+         <button class="button" onclick="insertValue('-')">-</button>
+ 
+         <button class="button" onclick="insertValue('0')">0</button>
+         <button class="button" onclick="insertValue('.')">.</button>
+         <button class="button" onclick="calculate()">=</button>
+         <button class="button" onclick="insertValue('+')">+</button>
+        </div>
+     </div>
+</body>
+</html>
